@@ -1,12 +1,12 @@
 object referenceMatertial{
 
 //Below are some basic Scala Syntax
-val phrase: String = "Hello World!"                                // val = immutable declaration, cannot change after declared
-println(hello)                                                     // Hello World!
+val phrase: String = "Hello World!"                            // val = immutable declaration, cannot change after declared
+println(hello)                                                 // Hello World!
 
-var newPhrase: String = "ThinkFWD"                                 // var = mutable declaration, can change after declared
+var newPhrase: String = "ThinkFWD"                             // var = mutable declaration, can change after declared
 newPhrase = phrase + "ThinkFWD"                                         
-println(newPhrase)                                                 // Hello World! ThinkFWD
+println(newPhrase)                                             // Hello World! ThinkFWD
 
 // Basic value types
 val numberOne: Int = 1                                         // numberOne = 1              || Whole numbers

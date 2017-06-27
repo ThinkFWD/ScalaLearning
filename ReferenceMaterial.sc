@@ -1,3 +1,6 @@
+// BELOW ARE SOME BASIC SYNTAX FOR SCALA -- Michael J Chan -- THINKFWD
+
+
 object referenceMatertial{
 
 //Below are some basic Scala Syntax
@@ -43,8 +46,49 @@ val pattern(newString) = theAnswer                             // newString : St
 val newAge = newString.toInt                                   // newAge: Int = 4
 println(newAge)                                                // 4
 
+  
+// Flow Control
+  
+//If Statements
+if (1 > 3) printLn ("hello World") else println ("Bye World)   // hello World
+
+//For loops
+for (x <- 1 to 4) {                                             // "<-" is range operator
+  val squared = x*x
+  printLn(squared)                                              // 1 ... 4 ... 9 ... 16
+}
+
+//While Loops
+var x = 10
+while (x >= 0) {
+  println(x)                                                    //10 ... 9 ... 8 ... 7 ... ect.. 
+  x -= 1
+}
+  
+//Expressions
+// returns the final value in a block automatically
+
+{val x = 10; x + 20}                                           // result: Int = 30
+println({val x = 10; x + 20})                                  // 30
 
 
+// Fibonacci Number
+// BASIC
+	 var first: Int = 0
+   var second: Int = 1                           
+	 for ( x <- 0 to 10){
+	   if (x < 1){
+	     println(first)
+	   } else if (x == 1){
+	     println(second)
+	   } else {
+	     println(first+second)
+	     var placeholder = second
+	     second = first + second
+	     first = placeholder
+	   }      
+
+// 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 
 
 
 
